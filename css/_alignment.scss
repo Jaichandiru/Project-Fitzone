@@ -1,0 +1,17 @@
+%centeralinment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%startalinment{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+%space-between-alinment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

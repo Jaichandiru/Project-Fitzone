@@ -1,0 +1,326 @@
+@use "./alignment";
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.maincontainer{
+    width: 100vw;
+    height: 100vh;
+     background-image: url(../src/images/frent\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .mainsub{
+        width: 74%;
+        height: 30%;
+        background-color: rgba(0, 0, 0, 0.521);
+        opacity: 1;
+    
+        position: absolute;
+        bottom: 9%;
+        right: 0;
+        .joinnow{
+            width: 40%;
+            height: 70%;
+            // background-color: aqua;
+            position: absolute;
+            left: 20%;
+            top: 15%;
+            opacity: 1;
+            h2{
+                font-size: 160px;
+                font-weight: bold;
+                color: rgb(247, 37, 37);
+                height: 20%;
+                width: 10%;
+                font-family: 'Teko', sans-serif;
+                position: absolute;
+                bottom: 120%;
+                opacity: 1;
+            }
+        }
+            span{
+                font-size: 160px;
+                font-weight: bold;
+                color: white;
+                height: 20%;
+                width: 10%;
+                position: absolute;
+                left: 300px;
+                top: 0px;
+                font-family: 'Teko', sans-serif;
+            }
+            .shape{
+                 font-size: large;
+                
+                color: white;
+                position: absolute;
+               left: 37%;
+               top: 80%;
+               font-family: sans-serif;
+            }
+        }
+    }
+    
+
+.header{
+    width: 100vw;
+    height: 7vw;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @extend %centeralinment;
+    .innerheader{
+        width: 90%;
+        height: 80%;
+        // background: black;
+        padding-left: 2%;
+        padding-right: 2%;
+        @extend %space-between-alinment;
+        .fitzonlogo{
+            background-image: url(../src/images/logo.png);
+            width: 15%;
+            height: 90%;
+            background-repeat: no-repeat;
+            margin-top:  2%;
+            margin-left: 6%;
+        //   background: rgb(255, 0, 0);
+        }
+        .menus{
+            height: 70%;
+            width: 60%;
+        //  background-color: aqua;
+            @extend %space-between-alinment;
+            padding-left: 8%;
+            padding-right: 8%;
+            margin-top: 1%;
+            .menu{
+                width: 11%;
+                height: 60%;
+                // background-color: rgb(15, 17, 17);
+                margin-left:2%;
+                margin-right:3%;
+                @extend %centeralinment;
+                color: white;
+            }
+             a{
+                text-decoration: none;
+                color: white;
+                font-size: small;
+                margin: 3px;
+            }
+            .b3{
+                width: 15%;
+            }
+            .b5{
+                width: 16%;
+            }
+            .b6{
+                width: 15%;
+            }
+           
+        }
+        .getstart{
+            width: 12%;
+            height: 50%;
+            
+            background: linear-gradient(to right, red,rgb(240, 95, 38)  );
+            border-radius: 50px;
+            @extend %centeralinment;
+            margin-top: 1%;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: small;
+                
+            }
+        }
+    }
+    
+}
+
+
+
+
+.middle-section{
+    width: 100vw;
+    height: 140vh;
+    background-color: aqua;
+    position: relative;
+    
+    
+    .box{
+        width: 70px;
+        height: 120px;
+        // background-color: antiquewhite;
+    }
+
+    .b1{
+        width: 70px;
+        height: 75px;
+        border-radius: 10px;
+        background-color: black;
+        position: absolute;
+        
+    }
+    .b2{
+        width: 70px;
+        height: 75px;
+        border-radius: 10px;
+        background-color: rgb(230, 11, 11); 
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-bottom-right-radius: 70px 30px;
+        @extend %centeralinment;
+    }
+    a{
+        color: brown;
+        text-decoration: none;
+        font-family: 'Teko', sans-serif;
+        margin-top: 5px;
+    }
+    p{
+       line-height: 25px;
+       margin-top: 20px;
+    }
+    
+   
+    .top{
+        width: 35vw;
+        height: 30vh;
+        border: 2px solid black;
+        position: absolute;
+        row-gap: 12%;
+        text-align: center;
+        top: 8%;
+        left: 30%;
+        @extend %centeralinment;
+        flex-direction: column;
+    }
+    .center{
+        width: 30vw;
+        height: 50vh;
+        // border: 2px solid black;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        background-image: url(../src/images/about_bg.png.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .topleft{
+        width: 25vw;
+        height: 40vh;
+        border: 2px solid black;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        // justify-content: space-between;
+        flex-direction: column;
+         &:hover {
+            .b2{
+            left: 15px;
+            transition: 1s;
+            }
+        }
+    }
+
+    .bottomleft{
+        width: 25vw;
+        height: 40vh;
+        border: 2px solid black;
+        position: absolute;
+        top: 65%;
+        left: 10%;
+    }
+    .topright{
+        width: 25vw;
+        height: 40vh;
+        border: 2px solid black;
+        position: absolute;
+        top: 35%;
+        right: 10%;
+    }
+    .bottomright{
+        width: 25vw;
+        height: 40vh;
+        border: 2px solid black;
+        position: absolute;
+        top: 65%;
+        right: 10%;
+    }
+
+}
+
+
+
+.three{
+    width: 100vw;
+    height: 85vh;
+    background-image: url(../src/images/excuses_bg.png.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner{
+        width: 100vw;
+        height: 60vh;
+        background-color: aliceblue;
+        display: flex;
+        .left{
+            width: 40%;
+            height: 100%;
+            background-image: url(../src/images/excuses_video_bg.png.webp);
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            background-color: rgb(249, 70, 70);
+            display: flex;
+            justify-content: flex-end;
+            .innerright{
+                width: 70%;
+                height: 90%;
+                background-color: rgb(19, 133, 233);
+                h1{
+                    font-size: 30px;
+                    font-family: 'Teko', sans-serif;
+                }
+                p{
+                    font-size: 18px;
+                    text-align: justify;
+                    padding-right: 60px;
+                    margin-top: 25px;
+                }
+                li{
+                    margin-right: 10px;
+                    list-style: none;
+                    font-size: 18px;
+                    padding-right: 45px;
+                    margin-top: 25px;
+                    
+                    
+                    i{
+                        margin-right: 10px;
+                        list-style-position: inside;
+                        font-size: 20px;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
