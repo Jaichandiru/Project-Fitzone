@@ -140,7 +140,6 @@
 .middle-section {
   width: 100vw;
   height: 140vh;
-  background-color: aqua;
   position: relative;
 }
 .middle-section .box {
@@ -173,21 +172,30 @@
 .middle-section p {
   line-height: 25px;
   margin-top: 20px;
+  word-spacing: 5px;
+  font-size: 18px;
+  color: rgb(120, 113, 113);
 }
 .middle-section .top {
   width: 35vw;
   height: 30vh;
-  border: 2px solid black;
   position: absolute;
-  row-gap: 12%;
+  row-gap: 5%;
   text-align: center;
   top: 8%;
   left: 30%;
   flex-direction: column;
 }
+.middle-section .top h1 {
+  font-size: 45px;
+  font-family: "Teko", sans-serif;
+}
+.middle-section .top p {
+  margin-top: 10px;
+}
 .middle-section .center {
-  width: 30vw;
-  height: 50vh;
+  width: 60vw;
+  height: 60vh;
   position: absolute;
   top: 35%;
   left: 35%;
@@ -198,7 +206,6 @@
 .middle-section .topleft {
   width: 25vw;
   height: 40vh;
-  border: 2px solid black;
   position: absolute;
   top: 35%;
   left: 10%;
@@ -214,26 +221,35 @@
 .middle-section .bottomleft {
   width: 25vw;
   height: 40vh;
-  border: 2px solid black;
   position: absolute;
   top: 65%;
   left: 10%;
 }
+.middle-section .bottomleft:hover .b2 {
+  left: 15px;
+  transition: 1s;
+}
 .middle-section .topright {
   width: 25vw;
   height: 40vh;
-  border: 2px solid black;
   position: absolute;
   top: 35%;
   right: 10%;
 }
+.middle-section .topright:hover .b2 {
+  left: 15px;
+  transition: 1s;
+}
 .middle-section .bottomright {
   width: 25vw;
   height: 40vh;
-  border: 2px solid black;
   position: absolute;
   top: 65%;
   right: 10%;
+}
+.middle-section .bottomright:hover .b2 {
+  left: 15px;
+  transition: 1s;
 }
 
 .three {

@@ -153,7 +153,7 @@
 .middle-section{
     width: 100vw;
     height: 140vh;
-    background-color: aqua;
+    // background-color: aqua;
     position: relative;
     
     
@@ -191,24 +191,36 @@
     p{
        line-height: 25px;
        margin-top: 20px;
+       word-spacing: 5px;
+       font-size: 18px;
+       color: rgb(120, 113, 113);
     }
     
    
     .top{
         width: 35vw;
         height: 30vh;
-        border: 2px solid black;
+        // border: 2px solid black;
         position: absolute;
-        row-gap: 12%;
+        row-gap: 5%;
         text-align: center;
         top: 8%;
         left: 30%;
         @extend %centeralinment;
         flex-direction: column;
+        h1{
+            font-size: 45px;
+            font-family: 'Teko', sans-serif;
+            
+        }
+        p{
+         margin-top: 10px;
+         
+        }
     }
     .center{
-        width: 30vw;
-        height: 50vh;
+        width: 60vw;
+        height: 60vh;
         // border: 2px solid black;
         position: absolute;
         top: 35%;
@@ -220,7 +232,7 @@
     .topleft{
         width: 25vw;
         height: 40vh;
-        border: 2px solid black;
+        // border: 2px solid black;
         position: absolute;
         top: 35%;
         left: 10%;
@@ -240,26 +252,44 @@
     .bottomleft{
         width: 25vw;
         height: 40vh;
-        border: 2px solid black;
+        // border: 2px solid black;
         position: absolute;
         top: 65%;
         left: 10%;
+        &:hover {
+            .b2{
+            left: 15px;
+            transition: 1s;
+            }
+        }
     }
     .topright{
         width: 25vw;
         height: 40vh;
-        border: 2px solid black;
+        // border: 2px solid black;
         position: absolute;
         top: 35%;
         right: 10%;
+        &:hover {
+            .b2{
+            left: 15px;
+            transition: 1s;
+            }
+        }
     }
     .bottomright{
         width: 25vw;
         height: 40vh;
-        border: 2px solid black;
+        // border: 2px solid black;
         position: absolute;
         top: 65%;
         right: 10%;
+        &:hover {
+            .b2{
+            left: 15px;
+            transition: 1s;
+            }
+        }
     }
 
 }
@@ -302,6 +332,7 @@
                     text-align: justify;
                     padding-right: 60px;
                     margin-top: 25px;
+                    
                 }
                 li{
                     margin-right: 10px;
