@@ -1,4 +1,4 @@
-.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top {
+.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,14 +150,14 @@
   width: 70px;
   height: 75px;
   border-radius: 10px;
-  background-color: black;
+  background-color: rgb(41, 40, 40);
   position: absolute;
 }
 .middle-section .b2 {
   width: 70px;
   height: 75px;
   border-radius: 10px;
-  background-color: rgb(230, 11, 11);
+  background: linear-gradient(to top right, red 80%, rgb(248, 180, 52) 20%);
   position: absolute;
   left: 10px;
   top: 10px;
@@ -263,28 +263,44 @@
 .three .inner {
   width: 100vw;
   height: 60vh;
-  background-color: aliceblue;
+  position: relative;
   display: flex;
 }
 .three .inner .left {
-  width: 40%;
+  width: 35%;
   height: 100%;
   background-image: url(../src/images/excuses_video_bg.png.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.three .inner .center-image {
+  width: 25%;
+  height: 110%;
+  background: url(../src/images/man-stretching.jpg);
+  position: absolute;
+  top: 118px;
+  left: 340px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.three .inner .center-image iframe {
+  height: 100%;
+  width: 100%;
 }
 .three .inner .right {
   width: 50%;
   height: 100%;
-  background-color: rgb(249, 70, 70);
   display: flex;
   justify-content: flex-end;
 }
 .three .inner .right .innerright {
   width: 70%;
-  height: 90%;
-  background-color: rgb(19, 133, 233);
+  height: 100%;
+  position: relative;
+  left: 50px;
 }
 .three .inner .right .innerright h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Teko", sans-serif;
 }
 .three .inner .right .innerright p {
@@ -304,4 +320,16 @@
   margin-right: 10px;
   list-style-position: inside;
   font-size: 20px;
+}
+.three .inner .right .innerright .getstart {
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(to right, red, rgb(240, 95, 38));
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.three .inner .right .innerright .getstart a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
 }/*# sourceMappingURL=style.css.map */

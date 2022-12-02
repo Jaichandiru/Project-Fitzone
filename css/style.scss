@@ -167,7 +167,7 @@
         width: 70px;
         height: 75px;
         border-radius: 10px;
-        background-color: black;
+        background-color: rgb(41, 40, 40);
         position: absolute;
         
     }
@@ -175,7 +175,7 @@
         width: 70px;
         height: 75px;
         border-radius: 10px;
-        background-color: rgb(230, 11, 11); 
+        background: linear-gradient(to top right,red 80%,rgb(248, 180, 52) 20%); 
         position: absolute;
         left: 10px;
         top: 10px;
@@ -306,25 +306,45 @@
     .inner{
         width: 100vw;
         height: 60vh;
-        background-color: aliceblue;
+        // background-color: aliceblue;
+        position: relative;
         display: flex;
         .left{
-            width: 40%;
+            width: 35%;
             height: 100%;
             background-image: url(../src/images/excuses_video_bg.png.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .center-image{
+            width: 25%;
+            height: 110%;
+            background: url(../src/images/man-stretching.jpg);
+            
+            position: absolute;
+            top: 118px;
+            left: 340px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
         }
         .right{
             width: 50%;
             height: 100%;
-            background-color: rgb(249, 70, 70);
+            //  background-color: rgb(249, 70, 70);
             display: flex;
             justify-content: flex-end;
             .innerright{
                 width: 70%;
-                height: 90%;
-                background-color: rgb(19, 133, 233);
+                height: 100%;
+                //  background-color: rgb(19, 133, 233);
+                 position: relative;
+                 left: 50px;
                 h1{
-                    font-size: 30px;
+                    font-size: 40px;
                     font-family: 'Teko', sans-serif;
                 }
                 p{
@@ -349,6 +369,21 @@
                         
                     }
                 }
+
+                .getstart{
+                    width: 150px;
+                    height: 40px;
+                    
+                    background: linear-gradient(to right, red,rgb(240, 95, 38)  );
+                    border-radius: 50px;
+                    @extend %centeralinment;
+                    margin-top: 30px;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-size: small;
+                        }
+                    }
                 
             }
         }
