@@ -1,4 +1,4 @@
-.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart {
+.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .main, .six .main .insidetext {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,4 +332,309 @@
   text-decoration: none;
   color: white;
   font-size: small;
+}
+
+.four {
+  width: 100vw;
+  height: 70vh;
+  background-color: aquamarine;
+}
+.four .insidetext {
+  margin-top: 150px;
+  width: 35vw;
+  height: 30vh;
+  flex-direction: column;
+}
+.four .insidetext h1 {
+  font-size: 45px;
+  font-family: "Teko", sans-serif;
+}
+.four .insidetext p {
+  margin-top: 10px;
+  line-height: 25px;
+  margin-top: 20px;
+  word-spacing: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(120, 113, 113);
+}
+.four .insidetext h4 {
+  font-size: medium;
+}
+
+.five {
+  width: 100vw;
+  height: 70vh;
+  background-color: black;
+}
+.five .sec {
+  width: 25vw;
+  height: 70vh;
+  color: white;
+  font-family: "Teko";
+}
+.five .c1 {
+  background: url(../src/images/c1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.five .c1 .inside {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
+  transition: 1s;
+}
+.five .c1 .text {
+  opacity: 0;
+}
+.five .c1:hover .inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.32);
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  opacity: 1;
+}
+.five .c1:hover .text {
+  opacity: 1;
+  flex-direction: column;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+.five .c1:hover .text h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+}
+.five .c1:hover .text p {
+  flex-wrap: nowrap;
+}
+.five .c1:hover .text .circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, red, rgb(238, 100, 45));
+  position: absolute;
+  left: 120px;
+  margin-top: 20px;
+}
+.five .c1:hover .text .circle .arrow {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+.five .c2 {
+  background: url(../src/images/c2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.five .c2 .inside {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
+  transition: 1s;
+}
+.five .c2 .text {
+  opacity: 0;
+}
+.five .c2:hover .inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.32);
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  opacity: 1;
+}
+.five .c2:hover .text {
+  opacity: 1;
+  flex-direction: column;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+.five .c2:hover .text h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+}
+.five .c2:hover .text p {
+  flex-wrap: nowrap;
+}
+.five .c2:hover .text .circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, red, rgb(238, 100, 45));
+  position: absolute;
+  left: 120px;
+  margin-top: 20px;
+}
+.five .c2:hover .text .circle .arrow {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+.five .c3 {
+  background: url(../src/images/c3.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.five .c3 .inside {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
+  transition: 1s;
+}
+.five .c3 .text {
+  opacity: 0;
+}
+.five .c3:hover .inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.32);
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  opacity: 1;
+}
+.five .c3:hover .text {
+  opacity: 1;
+  flex-direction: column;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+.five .c3:hover .text h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+}
+.five .c3:hover .text p {
+  flex-wrap: nowrap;
+}
+.five .c3:hover .text .circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, red, rgb(238, 100, 45));
+  position: absolute;
+  left: 120px;
+  margin-top: 20px;
+}
+.five .c3:hover .text .circle .arrow {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+.five .c4 {
+  background: url(../src/images/c4.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.five .c4 .inside {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
+  transition: 1s;
+}
+.five .c4 .text {
+  opacity: 0;
+}
+.five .c4:hover .inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.32);
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  opacity: 1;
+}
+.five .c4:hover .text {
+  opacity: 1;
+  flex-direction: column;
+  transition: 1s;
+  transition-delay: 0.2s;
+}
+.five .c4:hover .text h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+}
+.five .c4:hover .text p {
+  flex-wrap: nowrap;
+}
+.five .c4:hover .text .circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, red, rgb(238, 100, 45));
+  position: absolute;
+  left: 120px;
+  margin-top: 20px;
+}
+.five .c4:hover .text .circle .arrow {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+
+.six {
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(246, 242, 242);
+  margin-top: 130px;
+}
+.six .main .insidetext {
+  margin-top: 150px;
+  width: 35vw;
+  height: 30vh;
+  flex-direction: column;
+}
+.six .main .insidetext h1 {
+  font-size: 45px;
+  font-family: "Teko", sans-serif;
+}
+.six .main .insidetext p {
+  margin-top: 10px;
+  line-height: 25px;
+  margin-top: 20px;
+  word-spacing: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(120, 113, 113);
+}
+.six .main .insidetext h4 {
+  font-size: medium;
 }/*# sourceMappingURL=style.css.map */
