@@ -1,4 +1,4 @@
-.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .main, .six .main .insidetext {
+.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .center, .six .center .insidetext, .image .letters .bmi .getstart, .eight, .eight .center, .nine .s1 .icons, .nine .s2 .icons, .nine .s3 .icons, .nine .name, .ten, .ten .email, .ten .email a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,7 +337,6 @@
 .four {
   width: 100vw;
   height: 70vh;
-  background-color: aquamarine;
 }
 .four .insidetext {
   margin-top: 150px;
@@ -612,21 +611,22 @@
 
 .six {
   width: 100vw;
-  height: 80vh;
+  height: 130vh;
   background-color: rgb(246, 242, 242);
-  margin-top: 130px;
+  margin-top: 150px;
 }
-.six .main .insidetext {
+.six .center .insidetext {
+  z-index: 2;
   margin-top: 150px;
   width: 35vw;
   height: 30vh;
   flex-direction: column;
 }
-.six .main .insidetext h1 {
+.six .center .insidetext h1 {
   font-size: 45px;
   font-family: "Teko", sans-serif;
 }
-.six .main .insidetext p {
+.six .center .insidetext p {
   margin-top: 10px;
   line-height: 25px;
   margin-top: 20px;
@@ -635,6 +635,377 @@
   text-align: center;
   color: rgb(120, 113, 113);
 }
-.six .main .insidetext h4 {
+.six .center .insidetext h4 {
   font-size: medium;
+}
+.six .left {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 400px;
+}
+.six .left .border {
+  background: url(../src/images/border.webp);
+  height: 420px;
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 250px;
+  top: 50px;
+}
+.six .left .image {
+  background: url(../src/images/boxing.webp);
+  height: 420px;
+  width: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 350px;
+  top: 100px;
+}
+.six .right {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 40px;
+  margin-left: 710px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.six .right h2 {
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  margin-bottom: 10px;
+}
+.six .right h4 {
+  margin-bottom: 40px;
+}
+.six .right p {
+  color: rgb(120, 113, 113);
+  font-style: italic;
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.six .right label {
+  display: flex;
+  flex-direction: row;
+}
+.six .right input {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+
+.image {
+  width: 100vw;
+  height: 100vh;
+  background: url(../src/images/seven.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.image .letters {
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.image .letters h1 {
+  font-family: "Teko", sans-serif;
+  color: aliceblue;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.image .letters p {
+  padding-right: 200px;
+  line-height: 25px;
+  margin-bottom: 50px;
+  color: aliceblue;
+  font-size: 15px;
+}
+.image .letters .bmi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.image .letters .bmi .left {
+  height: 50px;
+  width: 340px;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  margin-bottom: 50px;
+  color: aliceblue;
+}
+.image .letters .bmi .right {
+  font-size: 16px;
+  height: 50px;
+  width: 340px;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+  color: aliceblue;
+}
+.image .letters .bmi .age {
+  font-size: 16px;
+  height: 50px;
+  width: 340px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+.image .letters .bmi label {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 40px;
+  height: 30px;
+  width: 340px;
+  justify-content: space-between;
+  font-size: 15px;
+  color: aliceblue;
+}
+.image .letters .bmi input {
+  height: 20px;
+  width: 20px;
+  color: aliceblue;
+}
+.image .letters .bmi .getstart {
+  height: 50px;
+  width: 170px;
+  background: linear-gradient(to right, red, rgb(240, 95, 38));
+  border-radius: 50px;
+  margin-top: 50px;
+}
+.image .letters .bmi .getstart a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+
+.eight {
+  height: 40vh;
+  width: 100vw;
+  flex-direction: column;
+}
+.eight .center {
+  flex-direction: column;
+  height: 100px;
+  width: 600px;
+}
+.eight .center h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: red;
+}
+.eight .center h1 {
+  font-family: "Teko", sans-serif;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+.eight .center p {
+  color: rgb(120, 113, 113);
+  line-height: 25px;
+  font-size: 17px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.nine {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.nine .img {
+  width: 343px;
+  height: 420px;
+  background: white;
+}
+.nine .s1 {
+  background: url(../src/images/team_1.png.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.nine .s1 .icons {
+  height: 200px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top: 170px;
+  right: -50px;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.nine .s1 .icons i {
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+.nine .s1 .inside {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.186);
+}
+.nine .s1:hover .inside {
+  height: 100%;
+  width: 100%;
+}
+.nine .s1:hover .icons {
+  top: 170px;
+  right: -5px;
+}
+.nine .s2 {
+  background: url(../src/images/team_2.png.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.nine .s2 .icons {
+  height: 200px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top: 170px;
+  right: -50px;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.nine .s2 .icons i {
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+.nine .s2 .inside {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.186);
+}
+.nine .s2:hover .inside {
+  height: 100%;
+  width: 100%;
+}
+.nine .s2:hover .icons {
+  top: 170px;
+  right: -5px;
+}
+.nine .s3 {
+  background: url(../src/images/team_3.png.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.nine .s3 .icons {
+  height: 200px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top: 170px;
+  right: -50px;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.nine .s3 .icons i {
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+.nine .s3 .inside {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.186);
+}
+.nine .s3:hover .inside {
+  height: 100%;
+  width: 100%;
+}
+.nine .s3:hover .icons {
+  top: 170px;
+  right: -5px;
+}
+.nine .name {
+  flex-direction: column;
+  line-height: 30px;
+  position: relative;
+  top: 460px;
+  left: 10px;
+}
+.nine .name a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  color: black;
+}
+.nine .name a:hover {
+  color: rgb(245, 23, 23);
+  transition: 0.5s;
+}
+.nine .name h4 {
+  color: rgb(120, 113, 113);
+}
+
+.ten {
+  width: 100vw;
+  height: 60vh;
+  background: url(../src/images/excuses_bg.png.webp);
+  flex-direction: column;
+}
+.ten h1 {
+  font-size: 45px;
+  font-family: "Teko", sans-serif;
+  margin-bottom: 30px;
+}
+.ten h2 {
+  margin-bottom: 60px;
+  font-weight: lighter;
+  color: rgb(120, 113, 113);
+}
+.ten .email input {
+  height: 60px;
+  width: 450px;
+  border-radius: 50px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+.ten .email a {
+  height: 50px;
+  width: 170px;
+  background: linear-gradient(to right, red, rgb(240, 95, 38));
+  border-radius: 50px;
+  flex-direction: row;
+  margin-left: 50px;
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+.ten .email a:hover {
+  background: linear-gradient(to right, rgb(240, 95, 38), red);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

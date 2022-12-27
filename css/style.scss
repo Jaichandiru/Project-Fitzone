@@ -397,7 +397,7 @@
 
     width: 100vw;
     height: 70vh;
-    background-color: aquamarine;
+    // background-color: aquamarine;
     @extend %centeralinment;
     
     .insidetext{
@@ -720,16 +720,18 @@
 
 .six{
     width: 100vw;
-    height: 80vh;
+    height: 130vh;
     background-color: rgb(246, 242, 242);
-    margin-top: 130px;
-    .main{
+    margin-top: 150px;
+    .center{
+     
        @extend %centeralinment;
         .insidetext{
+        z-index: 2;
         margin-top: 150px;
         width: 35vw;
         height: 30vh;
-        // background-color: rgb(36, 39, 241);
+       
         @extend %centeralinment;
         flex-direction: column;
         h1{
@@ -752,7 +754,448 @@
     }
        
     }
+
+
+    .left{
+        height: 500px;
+        width: 700px;
+        // background-color: burlywood;
+        position: absolute;
+        z-index: 1;
+        margin-top: 400px;
+        
+        .border{
+            background: url(../src/images/border.webp);
+            
+            height: 420px;
+            width: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 250px;
+            top: 50px;
+          }
+          .image{
+            background: url(../src/images/boxing.webp);
+            
+            height: 420px;
+            width: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 350px;
+            top: 100px;
+          
+           
+        }
+    }
+
+    .right{
+        height: 500px;
+        width: 700px;
+        
+        position: absolute;
+        z-index: 1;
+        margin-top: 40px;
+        margin-left: 710px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        flex-direction: column;
+        h2{
+            font-size: 30px;
+            font-family: 'Teko', sans-serif;
+            margin-bottom: 10px;
+        }
+        h4{
+           margin-bottom: 40px;
+        }
+        p{
+            color: rgb(120, 113, 113);
+            font-style: italic;
+            line-height: 25px;
+            font-size: 18px;
+            margin-bottom: 60px;
+        }
+        label{
+           display:flex;
+           flex-direction: row;
+
+            }
+        input{
+            height: 20px;
+            width: 20px;
+            margin: 5px;
+        }
+    }
 }
+
+.image{
+    width: 100vw;
+    height: 100vh;
+    background: url(../src/images/seven.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+     position: relative;
+    .letters{
+        height: 400px;
+        width: 700px;
+        // background-color: rgb(10, 126, 228);
+        position: absolute;
+        top: 100px;
+        left: 150px;
+       display: flex;
+        flex-direction: column;
+    h1{
+        font-family: 'Teko', sans-serif;
+        color: aliceblue;
+        font-size: 45px;
+        margin-bottom: 20px;
+        }
+    p{
+        padding-right: 200px;
+        line-height: 25px;
+        margin-bottom: 50px;
+        color: aliceblue;
+        font-size: 15px;
+    }
+    .bmi{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap:wrap ;
+
+        .left{
+        height: 50px;
+        width: 340px;
+        // background-color: brown;
+        border-bottom: 1px solid white;
+        font-size: 16px;
+        margin-bottom: 50px;
+        color: aliceblue;
+       
+        
+    }
+     .right{
+        font-size: 16px;
+        height: 50px;
+        width: 340px;
+        // background-color: brown;
+        border-bottom: 1px solid white;
+        margin-bottom: 50px;
+        color: aliceblue;
+    }
+       .age{
+        font-size: 16px;
+        height: 50px;
+        width: 340px;
+        // background-color: brown;
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+        color: aliceblue;
+    }
+     label{
+           display:flex;
+           flex-direction: row;
+        //    background: red;
+           position: relative;
+           margin-top: 40px;
+           height: 30px;
+           width: 340px;
+           justify-content: space-between;
+             font-size: 15px;
+             color: aliceblue;
+             
+            }
+        input{
+            height: 20px;
+            width: 20px;
+            color: aliceblue;
+            
+           }
+           .getstart{
+            height: 50px;
+            width: 170px;
+            background: linear-gradient(to right, red,rgb(240, 95, 38)  );
+            border-radius: 50px;
+            @extend %centeralinment;
+            margin-top: 50px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: small;
+                
+            }
+        }
+    }
+ 
+  }
+
+}
+
+.eight{
+    height: 40vh;
+    width: 100vw;
+    // background-color: aqua;
+     @extend %centeralinment;
+     flex-direction: column;
+     .center{
+    @extend %centeralinment;
+     flex-direction: column;
+     height: 100px;
+     width: 600px;
+          h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: red;
+        }
+        h1{
+          font-family: 'Teko', sans-serif;
+           margin-bottom: 15px;
+           font-size: 35px;
+           
+        }
+        p{
+            color: rgb(120, 113, 113);
+            
+            line-height: 25px;
+            font-size: 17px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+     }
+    
+}
+
+.nine{
+    width: 100vw;
+    height: 70vh;
+    // background-color:red ;
+    display:flex ;
+    align-items: flex-start;
+    justify-content:space-between;
+    .img{
+        width: 343px;
+        height: 420px;
+        background: white;
+    }
+    .s1{
+    background: url(../src/images/team_1.png.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    position: relative;
+    overflow: hidden;
+
+        .icons{
+            height: 200px;
+            width: 50px;
+            background: black;
+            position: absolute;
+            top: 170px;
+            right:-50px;
+            @extend %centeralinment;
+            flex-direction: column;
+            transition: 0.5s;
+            i{
+                font-size: 20px;
+                line-height: 40px;
+                color: white;
+            }
+        }
+        .inside{
+            height: 0px;
+            width:0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            background-color: rgba(0, 0, 0, 0.186);
+        }
+
+    &:hover{
+        .inside{
+            height: 100%;
+            width: 100%;
+        }
+        .icons{
+            top: 170px;
+            right:-5px;
+        }
+    }
+
+    
+ 
+    }
+      .s2{
+    background: url(../src/images/team_2.png.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+          .icons{
+            height: 200px;
+            width: 50px;
+            background: black;
+            position: absolute;
+            top: 170px;
+            right:-50px;
+            @extend %centeralinment;
+            flex-direction: column;
+            transition: 0.5s;
+            i{
+                font-size: 20px;
+                line-height: 40px;
+                color: white;
+            }
+        }
+        .inside{
+            height: 0px;
+            width:0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            background-color: rgba(0, 0, 0, 0.186);
+        }
+
+    &:hover{
+        .inside{
+            height: 100%;
+            width: 100%;
+        }
+        .icons{
+            top: 170px;
+            right:-5px;
+        }
+    }
+    
+    }
+      .s3{
+    background: url(../src/images/team_3.png.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 150px;
+    position: relative;
+    overflow: hidden;
+            .icons{
+            height: 200px;
+            width: 50px;
+            background: black;
+            position: absolute;
+            top: 170px;
+            right:-50px;
+            @extend %centeralinment;
+            flex-direction: column;
+            transition: 0.5s;
+            i{
+                font-size: 20px;
+                line-height: 40px;
+                color: white;
+            }
+        }
+        .inside{
+            height: 0px;
+            width:0px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+            background-color: rgba(0, 0, 0, 0.186);
+        }
+
+    &:hover{
+        .inside{
+            height: 100%;
+            width: 100%;
+        }
+        .icons{
+            top: 170px;
+            right:-5px;
+        }
+    }
+
+    }
+    .name{
+      @extend %centeralinment;
+      flex-direction: column;
+      line-height: 30px; 
+      position: relative;
+      top: 460px;
+      left:10px;
+      a{
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Teko', sans-serif;
+        color: black;
+        &:hover{
+            color: rgb(245, 23, 23);
+            transition: 0.5s;
+        }
+      } 
+      h4{
+         color: rgb(120, 113, 113);
+      }
+    }
+
+}
+
+
+.ten{
+    width: 100vw;
+    height: 60vh;
+    background: url(../src/images/excuses_bg.png.webp);
+    @extend %centeralinment;
+    flex-direction: column;
+        h1{
+            font-size: 45px;
+            font-family: 'Teko', sans-serif;
+            margin-bottom:30px;
+        }
+        h2{
+            margin-bottom:60px;
+            font-weight: lighter;
+            color: rgb(120, 113, 113);
+        }
+        .email{
+            @extend %centeralinment;
+            
+       
+            input{
+            height: 60px;
+            width: 450px;
+            border-radius: 50px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        a{
+           height: 50px;
+            width: 170px;
+            background: linear-gradient(to right, red,rgb(240, 95, 38)  );
+            border-radius: 50px;
+            @extend %centeralinment;
+            flex-direction: row;
+            margin-left: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: small;
+            
+            &:hover{
+                background: linear-gradient(to right,rgb(240, 95, 38),red  );
+                transition: 0.5s;
+            }
+        }
+    }
+       
+}
+
+
+
+
+
 
 
 
