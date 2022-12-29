@@ -1,4 +1,4 @@
-.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .center, .six .center .insidetext, .image .letters .bmi .getstart, .eight, .eight .center, .nine .s1 .icons, .nine .s2 .icons, .nine .s3 .icons, .nine .name, .ten, .ten .email, .ten .email a {
+.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .center, .six .center .insidetext, .image .letters .bmi .getstart, .eight, .eight .center, .nine .s1 .icons, .nine .s2 .icons, .nine .s3 .icons, .nine .name, .ten, .ten .email, .ten .email a, .eleven {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +18,8 @@
 }
 
 .maincontainer {
-  width: 100vw;
-  height: 100vh;
+  width: 1500px;
+  height: 800px;
   background-image: url(../src/images/frent\ image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1008,4 +1008,99 @@
 .ten .email a:hover {
   background: linear-gradient(to right, rgb(240, 95, 38), red);
   transition: 0.5s;
+}
+
+.eleven {
+  height: 60vh;
+  width: 100vw;
+  background-color: rgb(4, 4, 28);
+  flex-direction: column;
+}
+.eleven h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: white;
+}
+.eleven p {
+  color: rgb(120, 113, 113);
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+.eleven a {
+  text-decoration: none;
+  line-height: 30px;
+  color: rgb(120, 113, 113);
+  transition: 0.2s;
+}
+.eleven a:hover {
+  color: rgb(255, 0, 0);
+}
+.eleven h3 {
+  font-weight: normal;
+  line-height: 20px;
+  color: rgb(120, 113, 113);
+  font-size: medium;
+}
+.eleven span {
+  color: white;
+  font-weight: normal;
+}
+.eleven input {
+  height: 40px;
+  width: 170px;
+  padding: 10px;
+  border: none;
+}
+.eleven button {
+  height: 40px;
+  width: 70px;
+  background: linear-gradient(to right, red, rgb(240, 95, 38));
+  border: none;
+  color: white;
+}
+.eleven .inner {
+  height: 40vh;
+  width: 80vw;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(120, 113, 113);
+}
+.eleven .inner .sec {
+  height: 315px;
+  width: 220px;
+}
+.eleven .inner .l1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5px;
+  height: 315px;
+  width: 280px;
+}
+.eleven .inner .l3 {
+  width: 250px;
+}
+.eleven .inner .l4 {
+  width: 250px;
+}
+.eleven .icon {
+  width: 130px;
+  height: 30px;
+  align-self: flex-end;
+  position: relative;
+  right: 140px;
+  bottom: 30px;
+  color: rgb(120, 113, 113);
+}
+.eleven .icon i {
+  margin: 5px 5px;
+}
+.eleven .last {
+  align-self: flex-start;
+  position: relative;
+  left: 150px;
 }/*# sourceMappingURL=style.css.map */

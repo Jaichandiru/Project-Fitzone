@@ -10,8 +10,8 @@
     font-family: sans-serif;
 }
 .maincontainer{
-    width: 100vw;
-    height: 100vh;
+    width: 1500px;
+    height: 800px;
      background-image: url(../src/images/frent\ image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1190,6 +1190,116 @@
         }
     }
        
+}
+
+.eleven{
+    height: 60vh;
+    width: 100vw;
+    background-color: rgb(4, 4, 28);
+    @extend %centeralinment;
+    flex-direction: column;
+        h1{
+           font-family: 'Teko', sans-serif; 
+           font-size: 35px;
+           margin-bottom: 30px;
+           color: white;
+        }
+        p{
+            color: rgb(120, 113, 113);
+            line-height: 20px;
+            margin-bottom: 50px;
+         }
+        a{
+            text-decoration: none;
+            line-height: 30px;
+            color: rgb(120, 113, 113);
+            transition: 0.2s;
+            &:hover{
+
+                color: rgb(255, 0, 0);
+            }
+          }
+          h3{
+            font-weight: normal;
+            line-height: 20px;
+            color: rgb(120, 113, 113);
+            font-size: medium;
+          }
+          span{
+            color: white;
+            font-weight: normal;
+          }
+          input{
+            height: 40px;
+            width: 170px;
+            padding: 10px;
+            border: none;
+          }
+          button{
+            height: 40px;
+            width: 70px;
+            background: linear-gradient(to right, red,rgb(240, 95, 38)  );
+            border: none;
+            color: white;
+           
+            
+          }
+        .inner{
+            height: 40vh;
+            width: 80vw;
+            margin-bottom: 50px;
+            // background-color: white;
+            display: flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom: 1px solid rgb(120, 113, 113) ;
+            
+            
+                .sec{
+                    height: 315px;
+                    width: 220px;
+                    // background-color: aqua;
+                }
+                .l1{
+                    display: flex;
+                    justify-content:flex-start;
+                    align-items:flex-start;
+                    flex-direction: column;  
+                    padding: 5px;
+                    height: 315px;
+                    width: 280px;
+                  }
+                  .l3{
+                    width: 250px;
+                  }
+                  .l4{
+                    width: 250px;
+                  }
+        
+        }
+        .icon{
+            width: 130px;
+            height: 30px;
+            // background-color: white;
+            align-self: flex-end;
+            position: relative;
+            right: 140px;
+            bottom: 30px;
+            color: rgb(120, 113, 113);
+            i{
+                margin: 5px 5px;
+            }
+            
+        }
+    .last{
+     align-self: flex-start;
+    //  background-color: white;
+     position: relative;
+     left: 150px;
+        
+    }
+        
+        
 }
 
 
