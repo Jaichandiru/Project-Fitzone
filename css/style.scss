@@ -12,7 +12,7 @@
 .maincontainer{
     width: 1500px;
     height: 800px;
-     background-image: url(../src/images/frent\ image.jpg);
+     background-image: url(../src/images/rack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -976,48 +976,69 @@
     display:flex ;
     align-items: flex-start;
     justify-content:space-between;
-    .img{
-        width: 343px;
-        height: 420px;
-        background: white;
-    }
-    .s1{
-    background: url(../src/images/team_1.png.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 150px;
-    position: relative;
-    overflow: hidden;
+        .img{
+            width: 343px;
+            height: 550px;
+            background: white;
+        }
+        .s1{
+        background: url(../src/images/team_1.png.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 150px;
+        position: relative;
+        overflow: hidden;
 
-        .icons{
-            height: 200px;
-            width: 50px;
-            background: black;
-            position: absolute;
-            top: 170px;
-            right:-50px;
-            @extend %centeralinment;
-            flex-direction: column;
-            transition: 0.5s;
-            i{
-                font-size: 20px;
-                line-height: 40px;
-                color: white;
+            .icons{
+                height: 200px;
+                width: 50px;
+                background: black;
+                position: absolute;
+                top: 170px;
+                right:-50px;
+                @extend %centeralinment;
+                flex-direction: column;
+                transition: 0.5s;
+                i{
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: white;
+                }
             }
-        }
-        .inside{
-            height: 0px;
-            width:0px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: 1s;
-            background-color: rgba(0, 0, 0, 0.186);
-        }
+            .inside{
+                height: 0px;
+                width:0px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: 1s;
+                background-color: rgba(0, 0, 0, 0.186);
+            }
+              .name{
+                    @extend %centeralinment;
+                    flex-direction: column;
+                    line-height: 30px; 
+                    position: relative;
+                    top: 470px;
+                    left:0px;
+                        a{
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-family: 'Teko', sans-serif;
+                            color: black;
+                                &:hover{
+                                     color: rgb(245, 23, 23);
+                                     transition: 0.5s;
+                                }
+                         } 
+                         h4{
+                        color: rgb(120, 113, 113);
+                         }
+                    }
 
     &:hover{
         .inside{
-            height: 100%;
+            height: 76.5%;
             width: 100%;
         }
         .icons{
@@ -1025,16 +1046,13 @@
             right:-5px;
         }
     }
-
-    
- 
-    }
-      .s2{
-    background: url(../src/images/team_2.png.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
+}
+    .s2{
+        background: url(../src/images/team_2.png.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        overflow: hidden;
 
           .icons{
             height: 200px;
@@ -1061,10 +1079,32 @@
             transition: 1s;
             background-color: rgba(0, 0, 0, 0.186);
         }
+        .name{
+                    @extend %centeralinment;
+                    flex-direction: column;
+                    line-height: 30px; 
+                    position: relative;
+                    top: 470px;
+                    left:0px;
+                        a{
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-family: 'Teko', sans-serif;
+                            color: black;
+                                &:hover{
+                                     color: rgb(245, 23, 23);
+                                     transition: 0.5s;
+                                }
+                         } 
+                         h4{
+                        color: rgb(120, 113, 113);
+                         }
+                    }
+
 
     &:hover{
         .inside{
-            height: 100%;
+            height: 76.5%;
             width: 100%;
         }
         .icons{
@@ -1106,10 +1146,32 @@
             transition: 1s;
             background-color: rgba(0, 0, 0, 0.186);
         }
+        .name{
+                    @extend %centeralinment;
+                    flex-direction: column;
+                    line-height: 30px; 
+                    position: relative;
+                    top: 470px;
+                    left:0px;
+                        a{
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-family: 'Teko', sans-serif;
+                            color: black;
+                                &:hover{
+                                     color: rgb(245, 23, 23);
+                                     transition: 0.5s;
+                                }
+                         } 
+                         h4{
+                        color: rgb(120, 113, 113);
+                         }
+                    }
+
 
     &:hover{
         .inside{
-            height: 100%;
+            height: 76.5%;
             width: 100%;
         }
         .icons{
@@ -1118,31 +1180,13 @@
         }
     }
 
-    }
-    .name{
-      @extend %centeralinment;
-      flex-direction: column;
-      line-height: 30px; 
-      position: relative;
-      top: 460px;
-      left:10px;
-      a{
-        text-decoration: none;
-        font-size: 30px;
-        font-family: 'Teko', sans-serif;
-        color: black;
-        &:hover{
-            color: rgb(245, 23, 23);
-            transition: 0.5s;
-        }
-      } 
-      h4{
-         color: rgb(120, 113, 113);
-      }
-    }
-
+  }
 }
 
+
+   
+
+   
 
 .ten{
     width: 100vw;

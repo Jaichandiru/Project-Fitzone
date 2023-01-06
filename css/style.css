@@ -1,4 +1,4 @@
-.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .center, .six .center .insidetext, .image .letters .bmi .getstart, .eight, .eight .center, .nine .s1 .icons, .nine .s2 .icons, .nine .s3 .icons, .nine .name, .ten, .ten .email, .ten .email a, .eleven {
+.header, .header .innerheader .menus .menu, .header .innerheader .getstart, .middle-section .b2, .middle-section .top, .three .inner .right .innerright .getstart, .four, .four .insidetext, .five, .five .sec, .five .c1:hover .text, .five .c2:hover .text, .five .c3:hover .text, .five .c4:hover .text, .six .center, .six .center .insidetext, .image .letters .bmi .getstart, .eight, .eight .center, .nine .s1 .icons, .nine .s1 .name, .nine .s2 .icons, .nine .s2 .name, .nine .s3 .icons, .nine .s3 .name, .ten, .ten .email, .ten .email a, .eleven {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
 .maincontainer {
   width: 1500px;
   height: 800px;
-  background-image: url(../src/images/frent\ image.jpg);
+  background-image: url(../src/images/rack.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -828,7 +828,7 @@
 }
 .nine .img {
   width: 343px;
-  height: 420px;
+  height: 550px;
   background: white;
 }
 .nine .s1 {
@@ -863,8 +863,28 @@
   transition: 1s;
   background-color: rgba(0, 0, 0, 0.186);
 }
+.nine .s1 .name {
+  flex-direction: column;
+  line-height: 30px;
+  position: relative;
+  top: 470px;
+  left: 0px;
+}
+.nine .s1 .name a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  color: black;
+}
+.nine .s1 .name a:hover {
+  color: rgb(245, 23, 23);
+  transition: 0.5s;
+}
+.nine .s1 .name h4 {
+  color: rgb(120, 113, 113);
+}
 .nine .s1:hover .inside {
-  height: 100%;
+  height: 76.5%;
   width: 100%;
 }
 .nine .s1:hover .icons {
@@ -902,8 +922,28 @@
   transition: 1s;
   background-color: rgba(0, 0, 0, 0.186);
 }
+.nine .s2 .name {
+  flex-direction: column;
+  line-height: 30px;
+  position: relative;
+  top: 470px;
+  left: 0px;
+}
+.nine .s2 .name a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  color: black;
+}
+.nine .s2 .name a:hover {
+  color: rgb(245, 23, 23);
+  transition: 0.5s;
+}
+.nine .s2 .name h4 {
+  color: rgb(120, 113, 113);
+}
 .nine .s2:hover .inside {
-  height: 100%;
+  height: 76.5%;
   width: 100%;
 }
 .nine .s2:hover .icons {
@@ -942,33 +982,33 @@
   transition: 1s;
   background-color: rgba(0, 0, 0, 0.186);
 }
-.nine .s3:hover .inside {
-  height: 100%;
-  width: 100%;
-}
-.nine .s3:hover .icons {
-  top: 170px;
-  right: -5px;
-}
-.nine .name {
+.nine .s3 .name {
   flex-direction: column;
   line-height: 30px;
   position: relative;
-  top: 460px;
-  left: 10px;
+  top: 470px;
+  left: 0px;
 }
-.nine .name a {
+.nine .s3 .name a {
   text-decoration: none;
   font-size: 30px;
   font-family: "Teko", sans-serif;
   color: black;
 }
-.nine .name a:hover {
+.nine .s3 .name a:hover {
   color: rgb(245, 23, 23);
   transition: 0.5s;
 }
-.nine .name h4 {
+.nine .s3 .name h4 {
   color: rgb(120, 113, 113);
+}
+.nine .s3:hover .inside {
+  height: 76.5%;
+  width: 100%;
+}
+.nine .s3:hover .icons {
+  top: 170px;
+  right: -5px;
 }
 
 .ten {
