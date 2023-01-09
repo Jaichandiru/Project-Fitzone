@@ -89,11 +89,20 @@
 }
 .header .innerheader .fitzonlogo {
   background-image: url(../src/images/logo.png);
-  width: 15%;
-  height: 90%;
+  width: 200px;
+  height: 60px;
   background-repeat: no-repeat;
   margin-top: 2%;
   margin-left: 6%;
+}
+.header .innerheader .jai {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  display: none;
 }
 .header .innerheader .menus {
   height: 70%;
@@ -125,8 +134,8 @@
   width: 15%;
 }
 .header .innerheader .getstart {
-  width: 12%;
-  height: 50%;
+  width: 150px;
+  height: 40px;
   background: linear-gradient(to right, red, rgb(240, 95, 38));
   border-radius: 50px;
   margin-top: 1%;
