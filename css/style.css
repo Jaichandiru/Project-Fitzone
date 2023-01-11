@@ -29,10 +29,19 @@
   width: 74%;
   height: 30%;
   background-color: rgba(0, 0, 0, 0.521);
-  opacity: 1;
   position: absolute;
   bottom: 9%;
   right: 0;
+}
+@media screen and (max-width: 990px) {
+  .maincontainer .mainsub {
+    width: 70%;
+    height: 20%;
+    background-color: rgba(22, 21, 21, 0.521);
+    position: absolute;
+    bottom: 20%;
+    right: 370px;
+  }
 }
 .maincontainer .mainsub .joinnow {
   width: 40%;
@@ -41,6 +50,16 @@
   left: 20%;
   top: 15%;
   opacity: 1;
+}
+@media screen and (max-width: 990px) {
+  .maincontainer .mainsub .joinnow {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    opacity: 1;
+  }
 }
 .maincontainer .mainsub .joinnow h2 {
   font-size: 160px;
@@ -53,6 +72,11 @@
   bottom: 120%;
   opacity: 1;
 }
+@media screen and (max-width: 990px) {
+  .maincontainer .mainsub .joinnow h2 {
+    font-size: 140px;
+  }
+}
 .maincontainer .mainsub span {
   font-size: 160px;
   font-weight: bold;
@@ -64,6 +88,13 @@
   top: 0px;
   font-family: "Teko", sans-serif;
 }
+@media screen and (max-width: 990px) {
+  .maincontainer .mainsub span {
+    font-size: 140px;
+    position: absolute;
+    left: 250px;
+  }
+}
 .maincontainer .mainsub .shape {
   font-size: large;
   color: white;
@@ -71,6 +102,13 @@
   left: 37%;
   top: 80%;
   font-family: sans-serif;
+}
+@media screen and (max-width: 990px) {
+  .maincontainer .mainsub .shape {
+    font-size: 15px;
+    position: absolute;
+    top: 105%;
+  }
 }
 
 .header {
@@ -95,6 +133,12 @@
   margin-top: 2%;
   margin-left: 6%;
 }
+@media screen and (max-width: 990px) {
+  .header .innerheader .fitzonlogo {
+    position: absolute;
+    left: 350px;
+  }
+}
 .header .innerheader .jai {
   height: 60px;
   width: 60px;
@@ -103,6 +147,20 @@
   font-size: 40px;
   text-align: center;
   display: none;
+}
+@media screen and (max-width: 990px) {
+  .header .innerheader .jai {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    color: black;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    left: 100px;
+  }
 }
 .header .innerheader .menus {
   height: 70%;
@@ -117,6 +175,11 @@
   margin-left: 2%;
   margin-right: 3%;
   color: white;
+}
+@media screen and (max-width: 990px) {
+  .header .innerheader .menus .menu {
+    visibility: hidden;
+  }
 }
 .header .innerheader .menus a {
   text-decoration: none;
@@ -140,6 +203,13 @@
   border-radius: 50px;
   margin-top: 1%;
 }
+@media screen and (max-width: 990px) {
+  .header .innerheader .getstart {
+    position: absolute;
+    right: 50px;
+    background: linear-gradient(to right, red, rgb(240, 95, 38));
+  }
+}
 .header .innerheader .getstart a {
   text-decoration: none;
   color: white;
@@ -150,6 +220,12 @@
   width: 100vw;
   height: 140vh;
   position: relative;
+}
+@media screen and (max-width: 990px) {
+  .middle-section {
+    position: relative;
+    left: 100px;
+  }
 }
 .middle-section .box {
   width: 70px;
@@ -194,6 +270,12 @@
   top: 8%;
   left: 30%;
   flex-direction: column;
+}
+@media screen and (max-width: 990px) {
+  .middle-section .top {
+    position: absolute;
+    left: 30%;
+  }
 }
 .middle-section .top h1 {
   font-size: 45px;

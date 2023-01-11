@@ -1,0 +1,40 @@
+
+@media (max-width:990px) and (min-width: 800px)  {
+    .menus{
+        visibility: hidden;
+        
+    }
+
+    .fitzonlogo{
+        position: absolute;
+        left:350px;
+        
+    }
+    .getstart{
+        position: absolute;
+        right: 50px;
+        background: black;
+    }
+   .jai{
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        color: black;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        left: 100px;
+                    
+    }
+    .mainsub{
+        width: 64%;
+        height: 25%;
+        background-color: rgba(89, 18, 233, 0.521);
+        position: absolute;
+        bottom: 20%;
+        right: 100px;
+    }
+
+}
